@@ -1,0 +1,28 @@
+.project {
+  position: relative;
+  box-sizing: border-box;
+  padding: 2rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  width: calc(100% - 2rem);
+  transition: all 300ms;
+
+  h2 {
+    font-size: 2.5rem;
+    font-family: $ibm;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    opacity: 0.7;
+  }
+
+  .tech {
+    margin-top: 2rem;
+    h3 {
+      font-family: $ibm;
+    }
+    p {
+      text-transform: capitalize;
+    }
+  }
