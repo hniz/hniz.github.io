@@ -1,5 +1,5 @@
 # hniz.github.io
-Personal website!
+Fourth iteration of my personal website. Updated with a few new UI changes as well as all the new projects and work experiences I have had.
 
 
 ## What's New? 
