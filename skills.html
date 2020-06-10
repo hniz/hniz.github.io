@@ -1,0 +1,148 @@
+<!-- Resume -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Skills · Hamzah Nizami</title>
+    <meta name="Description" content="Hamzah Nizami is a computer scientist and student at Stevens. He's currently a Technical Engineering Intern at Synopsys.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>  
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="zk-favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="about.html"> 
+                    <span class="gradient-button">Hamzah Nizami</span>
+                </a>
+                <nav class="nav">
+                    <h5 class="option"><a href="work.html">Work</a></h5>
+                    <h5 class="option"><a href="about.html">About</a></h5>
+                    <h5 class="option selected">Skills</h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <div>
+                    <h1 class="gradient-text">Skills.<br>
+                    <span class="medium">Here is what I can do.</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="c6 main">
+
+        <div class="section">
+            <h5 class="subtitle">Programming Languages</h5>
+            <br>
+            <p>Python, C++, Java, C, OCaml, HTML, CSS, Javascript, ARMv8</p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Developer Tools</h5>
+            <br>
+            <p>Git, Github, bash, zsh, Linux, macOS, Windows, Visual Studio Code, IntelliJ IDEA, Docker, Maven, JUnit</p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Technologies</h5>
+            <br>
+            <p>Google Cloud Platform, Burp, Django, Flask, Arduino, Raspberry Pi, <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span></p>
+        </div>
+
+
+
+        
+        
+
+    </main>
+    
+ <footer class="c12 grid">
+        <div class="c6-left">
+            <p>Got any questions? Email me at <a href="mailto:hnizami1@stevens.edu?subject=Hey!" target="_blank" rel="noopener">hnizami1@stevens.edu</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://linkedin.com/in/hamzah-nizami" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>  
+
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+    
+</body>
+
+</html>

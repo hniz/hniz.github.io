@@ -1,0 +1,139 @@
+<!-- About -->
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Hamzah Nizami</title>
+    <meta name="Description" content="Hamzah Nizami is a computer scientist and student at Stevens. He's currently a Technical Engineering Intern at Synopsys.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+        
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+        
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="zk-favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89012104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-89012104-2');
+    </script>
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="about.html"> 
+                    <span class="gradient-button">Hamzah Nizami</span>
+                </a>
+                <nav class="nav">
+                    <h5 class="option"><a href="work.html">Work</a></h5>
+                    <h5 class="option selected">About</h5>
+                    <h5 class="option"><a href="skills.html">Skills</a></h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <div>
+                    <h1 class="gradient-text">Hi, I'm Hamzah.</h1>
+                    <p> 📌 Located in New York City, New York. </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="c12 summary main">
+        <div>
+            <p>
+                I’m a rising junior at <a href="https://www.stevens.edu/" target="_blank" rel="noopener" class="link stevens-link">Stevens</a> studying Computer Science and Mathematics. Currently, I'm back at <a href="https://www.synopsys.com/software-integrity.html" target="_blank" rel="noopener" style="color: #ae34ff" class="link">Synopsys</a> working as a Technical Engineering Intern. I also work as an Undergraduate and Graduate level Computer Science Course Assistant at <a href="https://www.stevens.edu/" target="_blank" rel="noopener" class="link stevens-link">Stevens</a> during the academic year.
+            </p><br>
+            <p>
+                I'm passionate about bringing people together and solving problems that make positive impact. At Stevens, I serve as the President of <a href="https://www.duckhacks.xyz/" target="_blank" rel="noopener" style="color: #d4c644" class="link">DuckHacks</a> and the Professional Development Chair for the Stevens chapter of <a href="http://sasestevens.github.io/" target="_blank" rel="noopener" style="color: #40ad40" class="link">Society of Asian Scientists and Engineers (SASE)</a>.
+            </p><br>
+            <p>
+                I'm interested in computer vision, machine learning, financial markets, data analytics and web development. However, I'm eager to learn anything. You can find me on <a href="https://www.linkedin.com/in/hamzah-nizami/" target="_blank" rel="noopener" style="color: #486dff" class="link">LinkedIn</a> or <a href="https://github.com/hniz" target="_blank" rel="noopener" style="color:#9e9795" class="link">Github</a>.
+            </p>
+            <p> 
+                   
+               </p>
+        </div>
+        <img alt="picture of Hamzah Nizami" src="hniz.jpg" class="avi">
+    </main>
+    
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>Got any questions? Email me at <a href="mailto:hnizami1@stevens.edu?subject=Hey!" target="_blank" rel="noopener">hnizami1@stevens.edu</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://linkedin.com/in/hamzah-nizami" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>  
+
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+</body>
+
+</html>
